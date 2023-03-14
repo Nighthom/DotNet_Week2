@@ -1,7 +1,7 @@
 ﻿using System;
-// List와 
+// Dictionary 사용을 위한 모듈
 using System.Collections.Generic;
-// ToList() 메서드를 위함
+// ToArray() 메서드를 위한 모듈
 using System.Linq;
 
 namespace _2_4
@@ -13,14 +13,15 @@ namespace _2_4
             Console.Write("문자열을 입력하세요: ");
             string input = Console.ReadLine();
 
-            // 1. 입력받은 문자열을 공백을 기준으로 나눠서 리스트에 삽입
-            List<string> words = input.Split(' ').ToList();
-
+            // 1. 입력받은 문자열을 공백을 기준으로 나눠서 배열 생성
+            string[] words = input.Split(' ').ToArray();
+            // 단어와 1대1로 매핑되는 count를 위한 배열. 
+            int[] count = new int[words.Length];
             // 2. 있는 단어들을 계수하기 위한 딕셔너리 정의
             // string: word, int: count.
             Dictionary<string, int> wordsCount = new Dictionary<string, int>();
 
-            // 3. 현재 words 리스트 내부의 단어를 쭉 훑으며 
+            // 3. words 내부의 단어를 쭉 훑으며 
             // 단어 계수를 count함.
             foreach(string word in words)
             {

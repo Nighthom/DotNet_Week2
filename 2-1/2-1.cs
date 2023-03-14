@@ -6,15 +6,14 @@ namespace _2_1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("임의의 정수 하나를 입력하세요: ");
+            Console.Write("임의의 정수 하나를 입력하세요: ");
             int input = int.Parse(Console.ReadLine());
 
-            if (input > 0)
-                Console.WriteLine(input + "은 양수입니다.");
-            else if (input < 0)
-                Console.WriteLine(input + "은 음수입니다.");
-            else
-                Console.WriteLine(input + "은 0입니다.");
+            string output = input > 0 ? "양수" :  // 0 이상인 경우 양수
+                (input < 0 ? "음수" : "0");       // 미만인 경우 음수
+                                                 // 둘 모두 아니면 0
+            Console.WriteLine("실행 결과");
+            Console.WriteLine(input + " = " + output);
         }
 
     }

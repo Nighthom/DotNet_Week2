@@ -9,13 +9,13 @@ namespace _2_2
             Console.Write("임의의 문자열을 입력하세요: ");
             string input = Console.ReadLine();
             int count = 0;
-            // 모음만 모아놓은 문자열
-            string vowels = "aeiou";
+            
 
             foreach(char chr in input)
             {
-                // chr이 모음일 경우 vowels에서 해당 문자를 찾을 수 있음.
-                if (vowels.Contains(chr))
+                
+                if (chr == 'a' || chr == 'e' || chr == 'i'
+                    || chr == 'o' || chr == 'u')
                     count++;
             }
 

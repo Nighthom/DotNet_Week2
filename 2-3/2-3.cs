@@ -36,7 +36,7 @@ namespace _2_3
             foreach (int num in nums)
             {
                 // countArr[num] == true
-                if (countArr[num])
+                if (!countArr[num])
                     continue;
                 Console.Write(num + " ");
                 countArr[num] = true;
