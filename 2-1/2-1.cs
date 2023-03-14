@@ -13,7 +13,7 @@ namespace _2_1
                 (input < 0 ? "음수" : "0");       // 미만인 경우 음수
                                                  // 둘 모두 아니면 0
             Console.WriteLine("실행 결과");
-            Console.WriteLine(input + " = " + output);
+            Console.WriteLine("입력한 값은 " + output + "입니다.");
         }
 
     }
