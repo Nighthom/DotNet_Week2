@@ -8,7 +8,7 @@ namespace _2_3
         const int RANGE = 1000;
         static void Main(string[] args)
         {
-            bool[] countArr = new bool[RANGE];
+            bool[] isDuplicatedNums = new bool[RANGE];
             Console.Write("입력할 정수의 개수를 입력하세요: ");
             int count = int.Parse(Console.ReadLine());
             int[] nums = new int[count];            
@@ -28,17 +28,17 @@ namespace _2_3
             }
             // 중복을 확인할 배열을 초기화
             for (int i = 0; i < 1000; i++)
-                countArr[i] = false;
+                isDuplicatedNums[i] = false;
 
             // 중복 확인 및 출력
             Console.Write("중복되지 않은 수 목록: [ ");
             foreach (int num in nums)
             {
-                // countArr[num] == true
-                if (!countArr[num])
+                // isDuplicatedNums[num] == true
+                if (!isDuplicatedNums[num])
                     continue;
                 Console.Write(num + " ");
-                countArr[num] = true;
+                isDuplicatedNums[num] = true;
             }
             Console.Write("]");
 
