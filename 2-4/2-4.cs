@@ -16,12 +16,12 @@ namespace _2_4
             // 1. 입력받은 문자열을 공백을 기준으로 나눠서 배열 생성
             string[] words = input.Split(' ').ToArray();
 
-            // 2. 있는 단어들을 계수하기 위한 딕셔너리 정의
+            // 2. 있는 단어들을 count하기 위한 딕셔너리 정의
             // string: word, int: count.
             Dictionary<string, int> wordsCount = new Dictionary<string, int>();
 
             // 3. words 내부의 단어를 쭉 훑으며 
-            // 단어 계수를 count함.
+            // 단어 개수를 count함.
             foreach(string word in words)
             {
                 if (wordsCount.ContainsKey(word))
