@@ -35,7 +35,7 @@ namespace _2_3
             foreach (int num in nums)
             {
                 // isDuplicatedNums[num] == true
-                if (!isDuplicatedNums[num])
+                if (isDuplicatedNums[num])
                     continue;
                 Console.Write(num + " ");
                 isDuplicatedNums[num] = true;
