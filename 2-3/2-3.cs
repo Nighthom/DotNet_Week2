@@ -35,6 +35,7 @@ namespace _2_3
             Console.Write("중복되지 않은 수 목록: [ ");
             foreach (int num in nums)
             {
+                // countArr[num] == true
                 if (countArr[num])
                     continue;
                 Console.Write(num + " ");
