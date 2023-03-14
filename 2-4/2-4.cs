@@ -15,8 +15,7 @@ namespace _2_4
 
             // 1. 입력받은 문자열을 공백을 기준으로 나눠서 배열 생성
             string[] words = input.Split(' ').ToArray();
-            // 단어와 1대1로 매핑되는 count를 위한 배열. 
-            int[] count = new int[words.Length];
+
             // 2. 있는 단어들을 계수하기 위한 딕셔너리 정의
             // string: word, int: count.
             Dictionary<string, int> wordsCount = new Dictionary<string, int>();
