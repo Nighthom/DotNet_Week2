@@ -13,11 +13,15 @@ namespace _2_6
 
             foreach(char chr in input)
             {
-                if('A' <= chr)
+                if('a' <= chr)
                 {
-                    if (chr <= 'Z')
-                        output += (char)(chr + 32);
+                    if (chr <= 'z')
+                    {
+                        output += (char)(chr - 32);
+                        continue;
+                    }
                 }
+                output += chr;
             }
 
             Console.WriteLine("대문자 -> 소문자 문자열: " + output);
