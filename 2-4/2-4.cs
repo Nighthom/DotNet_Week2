@@ -1,8 +1,6 @@
 ﻿using System;
 // Dictionary 사용을 위한 모듈
 using System.Collections.Generic;
-// ToArray() 메서드를 위한 모듈
-using System.Linq;
 
 namespace _2_4
 {
@@ -14,7 +12,7 @@ namespace _2_4
             string input = Console.ReadLine();
 
             // 1. 입력받은 문자열을 공백을 기준으로 나눠서 배열 생성
-            string[] words = input.Split(' ').ToArray();
+            string[] words = input.Split(' ');
 
             // 2. 있는 단어들을 count하기 위한 딕셔너리 정의
             // string: word, int: count.
