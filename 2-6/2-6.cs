@@ -24,7 +24,7 @@ namespace _2_6
                 output += chr;
             }
 
-            Console.WriteLine("대문자 -> 소문자 문자열: " + output);
+            Console.WriteLine("소문자 -> 대문자 문자열: " + output);
         }
     }
 }
